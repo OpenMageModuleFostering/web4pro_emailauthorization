@@ -1,0 +1,75 @@
+/**
+ * WEB4PRO - Email authorization feature
+ *
+ * @author    WEB4PRO <m.krainy@web4pro.com.ua>
+ * @category  WEB4PRO
+ * @package   Web4pro_Emailauthorization
+ * @copyright Copyright (c) 2016 WEB4PRO (http://www.web4pro.net)
+ * @license   http://www.web4pro.net/license.txt
+ */
+
+/*
+* default styles
+*/
+#b-email-auth {
+    margin-top: 20px;
+}
+
+#b-email-auth h2 {
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
+    color: #e76200;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 14px;
+    padding: 0 0 5px 23px;
+    text-transform: uppercase;
+    background-image: url("../../../default/default/images/i_page2.gif");
+}
+
+#b-email-auth .b-content {
+    padding: 14px 21px;
+    background: #faf7ee url("../../../default/default/images/bkg_login-box.gif") repeat-x scroll 0 0;
+    border-color: #bbb6a5;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#b-email-auth .b-col-2 {
+    float: right;
+    width: 43.6%;
+}
+
+#b-email-auth .b-input-box {
+    float: left;
+    padding-top: 0;
+    width: 344px;
+}
+#b-email-auth .b-input-box input {
+width: 96%;
+}
+
+#b-email-auth .b-actions {
+    float: left;
+    margin: 0;
+}
+
+/*
+* Rwd styles
+*/
+.block-emailauth .input-box {
+    float: left;
+    padding-top: 0;
+    width: 365px;
+}
+
+.block-emailauth .actions {
+    float: left;
+    margin: 0;
+}
+
+.block-emailauth .actions button {
+    line-height: 16px;
+}
+

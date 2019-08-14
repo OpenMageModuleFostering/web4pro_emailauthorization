@@ -1,0 +1,23 @@
+<?php if ($this->canShow()) { ?>
+    <div id="email-auth" class="col2-set">
+        <div class="block-emailauth col-2">
+            <div class="block-title">
+                <strong><span><?php echo $this->__('Email authorization') ?></span></strong>
+            </div>
+            <form action="<?php echo $this->getEmailauthPostUrl() ?>" method="post" id="email-auth-form">
+                <div class="block-content">
+                    <div class="input-box">
+                        <input type="email" spellcheck="false" name="email"
+                               title="<?php echo Mage::helper('core')->quoteEscape($this->__('Sign in with email')) ?>"
+                               class="input-text required-entry validate-email"/>
+                    </div>
+                    <div class="actions">
+                        <button type="submit" title="<?php echo $this->__('Send') ?>" class="button">
+                            <span><span><?php echo $this->__('Send') ?></span></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<?php } ?>

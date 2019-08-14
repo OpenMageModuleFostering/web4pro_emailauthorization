@@ -1,0 +1,23 @@
+<!--@subject Authorize with email @-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Sign in with email</h1>
+            <p>Check your mailbox and follow the link to sing in.</p>
+            <p>The link is available during {{var tokenlifetime}} minutes.</p>
+            <table cellspacing="0" cellpadding="0" class="action-button" >
+                <tr>
+                    <td>
+                        <a href="{{var token_url}}"><span>Sing in now</span></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

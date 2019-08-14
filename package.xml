@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Web4pro_Emailauthorization</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds a possibility of login without a password. A user enters an email address and just follows a link with token received on email.</summary>
+    <description>This module allows the user to sign in his account easier. He just needs to enter an email address and then confirm his login, following the link with a token in the email. The link is temporary. It's available during the certain time.</description>
+    <notes>This module allows the user to sign in his account easier. He just needs to enter an email address and then confirm his login, following the link with a token in the email. The link is temporary. It's available during the certain time.</notes>
+    <authors><author><name>Web4pro</name><user>mkrainy</user><email>mkrainy@corp.web4pro.com.ua</email></author></authors>
+    <date>2016-04-27</date>
+    <time>10:23:27</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="Web4pro"><dir name="Emailauthorization"><dir><dir name="Block"><file name="Emailauth.php" hash="00a2f32a43f2c9cb90d9626e7bca1d52"/></dir><dir name="Helper"><file name="Data.php" hash="5c06bf003ca950342b9e55b36e8163b7"/></dir><dir name="Model"><file name="Emailauth.php" hash="d4df55dc82a36ab49764c5bea9510013"/><dir name="Resource"><dir name="Emailauth"><file name="Collection.php" hash="3deedb5b85071b6f124968a239cdac5a"/></dir><file name="Emailauth.php" hash="b5df840b50ddfe0ae18d4d886346b592"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="bffd2b08c80913b56c921e6ad0871c38"/></dir><dir name="etc"><file name="adminhtml.xml" hash="8fd0fc3589c7ba074e3fd4d2bd0d791b"/><file name="config.xml" hash="f50a53df6fee666bf03d6d360d64eafc"/><file name="system.xml" hash="465b2695bf7ae589a21bbc85b542415a"/></dir><dir name="sql"><dir name="web4proemailauth_setup"><file name="install-0.0.1.php" hash="6b8377e21aeb54bf20aaa5692d0f18c7"/></dir></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="web4pro_emailauthorization.xml" hash="c6d73da89b3bcd0716085ecfeaab70ab"/></dir><dir name="template"><dir name="web4pro_emailauthorization"><file name="emailauth.phtml" hash="14b2df50691be8666e7cad98e2051862"/></dir></dir></dir></dir><dir name="rwd"><dir name="default"><dir name="template"><dir name="web4pro_emailauthorization"><file name="emailauth.phtml" hash="a5ce4f57a182e7d87fe88f1aa600fc3b"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Web4pro_Emailauthorization.xml" hash="841985c64906b2962a35e0b1b68cc4fa"/></dir></dir><dir name="locale"><dir name="en_US"><dir name="template"><dir name="email"><dir name="web4proemailauth"><file name="token_email.html" hash="5612bffac741f4f00582161b954f9f4d"/><file name="token_email_v18.html" hash="19cb8f37feb5d4a7f127bf53d8e9a873"/></dir></dir></dir></dir></dir></dir><dir name="skin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="web4pro_emailauthorization.css" hash="92cb213c0c9daf90f3bc8b258220ef39"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.6.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * WEB4PRO - Email authorization feature
+ *
+ * @author    WEB4PRO <achernyshev@web4pro.com.ua>
+ * @category  WEB4PRO
+ * @package   Web4pro_Emailauthorization
+ * @copyright Copyright (c) 2016 WEB4PRO (http://www.web4pro.net)
+ * @license   http://www.web4pro.net/license.txt
+ */
+-->
+<layout>
+    <customer_account_login>
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/web4pro_emailauthorization.css</stylesheet></action>
+        </reference>
+        <reference name="content">
+            <block type="web4proemailauth/emailauth" after="customer_form_login" template="web4pro_emailauthorization/emailauth.phtml"/>
+        </reference>
+    </customer_account_login>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * WEB4PRO - Email authorization feature
+ *
+ * @author    WEB4PRO <achernyshev@web4pro.com.ua>
+ * @category  WEB4PRO
+ * @package   Web4pro_Emailauthorization
+ * @copyright Copyright (c) 2016 WEB4PRO (http://www.web4pro.net)
+ * @license   http://www.web4pro.net/license.txt
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <web4pro_attachments>
+                        <title>Web4pro</title>
+                        <sort_order>0</sort_order>
+                    </web4pro_attachments>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <web4proemailauth translate="title">
+                                        <title>Email Authorization</title>
+                                        <sort_order>100</sort_order>
+                                    </web4proemailauth>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

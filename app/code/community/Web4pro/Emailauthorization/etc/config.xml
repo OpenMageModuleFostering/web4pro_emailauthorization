@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * WEB4PRO - Email authorization feature
+ *
+ * @author    WEB4PRO <achernyshev@web4pro.com.ua>
+ * @category  WEB4PRO
+ * @package   Web4pro_Emailauthorization
+ * @copyright Copyright (c) 2016 WEB4PRO (http://www.web4pro.net)
+ * @license   http://www.web4pro.net/license.txt
+ */
+-->
+<config>
+    <modules>
+        <Web4pro_Emailauthorization>
+            <version>0.0.1</version>
+        </Web4pro_Emailauthorization>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <web4proemailauth>
+                    <file>web4pro_emailauthorization.xml</file>
+                </web4proemailauth>
+            </updates>
+        </layout>
+        <routers>
+            <web4proemailauth>
+                <use>standard</use>
+                <args>
+                    <module>Web4pro_Emailauthorization</module>
+                    <frontName>emailauth</frontName>
+                </args>
+            </web4proemailauth>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <web4proemailauth>
+                <class>Web4pro_Emailauthorization_Block</class>
+            </web4proemailauth>
+        </blocks>
+        <helpers>
+            <web4proemailauth>
+                <class>Web4pro_Emailauthorization_Helper</class>
+            </web4proemailauth>
+        </helpers>
+        <models>
+            <web4proemailauth>
+                <class>Web4pro_Emailauthorization_Model</class>
+                <resourceModel>web4proemailauth_resource</resourceModel>
+            </web4proemailauth>
+            <web4proemailauth_resource>
+                <class>Web4pro_Emailauthorization_Model_Resource</class>
+                <entities>
+                    <emailauthorization>
+                        <table>web4pro_emailauthorization_entities</table>
+                    </emailauthorization>
+                </entities>
+            </web4proemailauth_resource>
+        </models>
+        <resources>
+            <web4proemailauth_setup>
+                <setup>
+                    <module>Web4pro_Emailauthorization</module>
+                </setup>
+            </web4proemailauth_setup>
+        </resources>
+        <template>
+            <email>
+                <web4proemailauth_email_template module="Web4pro_Emailauthorization">
+                    <label>Authorization Email</label>
+                    <!-- app/locale/en_US/template/email/web4proemailauth/token_email.html -->
+                    <file>web4proemailauth/token_email.html</file>
+                    <type>html</type>
+                </web4proemailauth_email_template>
+                <web4proemailauth_email_template_v18 module="Web4pro_Emailauthorization">
+                    <label>Authorization Email</label>
+                    <file>web4proemailauth/token_email_v18.html</file>
+                    <type>html</type>
+                </web4proemailauth_email_template_v18>
+            </email>
+        </template>
+    </global>
+    <default>
+        <web4proemailauth>
+            <general>
+                <tokenlifetime>60</tokenlifetime>
+                <showloginblock>1</showloginblock>
+            </general>
+        </web4proemailauth>
+    </default>
+</config>
