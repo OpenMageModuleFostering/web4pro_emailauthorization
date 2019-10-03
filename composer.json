@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Web4pro_Emailauthorization",
+    "name": "OpenMageModuleFostering\/Web4pro_Emailauthorization",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Adds a possibility of login without a password. A user enters an email address and just follows a link with token received on email.",
     "authors": [
-    {
-        "name": "Web4pro",
-        "email": "mkrainy@corp.web4pro.com.ua"
-    }
-],
+        {
+            "name": "Web4pro",
+            "email": "mkrainy@corp.web4pro.com.ua"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
